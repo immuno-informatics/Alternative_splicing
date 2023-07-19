@@ -9,9 +9,9 @@ library(data.table)
 gencode<-rtracklayer::import("gencode.v36.annotation.gtf")
 beat<-rtracklayer::import("BEATv36_AML.gtf")
 tcga<-rtracklayer::import("merged_TCGA.gtf")
-flair<-rtracklayer::import("C:/Users/bea_f/OneDrive/Escritorio/HematoLaFe/GTFs/flair_filter_transcripts.gtf")
-hl60.1<-rtracklayer::import("C:/Users/bea_f/OneDrive/Escritorio/HematoLaFe/CellLineBAM/GSE175291-HL60/GSM5331246/GSM5331246_ENCFF770VLX_GTF/GSM5331246_ENCFF770VLX_transcriptome_annotations_GRCh38.gtf")
-hl60.2<-rtracklayer::import("C:/Users/bea_f/OneDrive/Escritorio/HematoLaFe/CellLineBAM/GSE175291-HL60/GSM5331247/GSM5331247_ENCFF376DFZ_GTF/GSM5331247_ENCFF376DFZ_transcriptome_annotations_GRCh38.gtf")
+flair<-rtracklayer::import("flair_filter_transcripts.gtf")
+hl60.1<-rtracklayer::import("GSM5331246_ENCFF770VLX_transcriptome_annotations_GRCh38.gtf")
+hl60.2<-rtracklayer::import("GSM5331247_ENCFF376DFZ_transcriptome_annotations_GRCh38.gtf")
 
 # RJunBase
 junctions<-read.delim("RJunBase/RJunbase_annotated.txt",sep="\t")
